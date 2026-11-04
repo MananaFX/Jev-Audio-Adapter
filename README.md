@@ -1,4 +1,4 @@
-# Audio Jev
+# Jev-Audio-Adapter
 
 **复用 FireRed 音频编码器，通过 Adapter 将 D3 决策模型拓展到音频。**
 
@@ -16,7 +16,7 @@
 | [AudioJev（shlv）· 论文三 seed 均值](https://arxiv.org/html/2610.01293v1#A4) | — | 67.90 ± 0.92† | — | — | 70.90 ± 0.35‡ | 61.70 ± 0.68† | 55.33 ± 0.84 |
 | [Toddler-Jev · 模型卡](https://huggingface.co/TeenageWorks/Toddler-Jev#evaluation-results) | — | — | — | — | 68.70 | 61.30 | 56.90 |
 | [Jev-Omni · 模型卡](https://huggingface.co/akhilaaa3/Jev-Omni#results) | — | — | — | — | 63.10 | — | — |
-| **本项目 · FireRed + D3-Flash · 最新 checkpoint** | **77.39** | **66.99** | **92.69** | **60.19** | 尚未运行 | **76.16** | 未完成 |
+| **Jev-Audio-Adapter · FireRed + D3-Flash** | **77.39** | **66.99** | **92.69** | **60.19** | 尚未运行 | **76.16** | 未完成 |
 
 ### 来源与口径
 
