@@ -4,7 +4,16 @@
 
 音频 → FireRed Encoder → Adapter → D3 → 决策输出
 
-本仓库记录最新一轮训练方法与通用音频分类评测。当前仅提供方法与结果文档，尚未发布可运行实现、模型权重或数据。
+本仓库提供最新训练方法、评测结果与**待 GPU 验证的参考推理代码**；权重单独发布在 [ModelScope](https://modelscope.cn/models/MewTiger/Jev-Audio-Adapter)。不发布数据集、音频或逐样本输出。
+
+## 下载与参考推理
+
+- **代码**：[inference.py](inference.py)、[依赖](requirements-inference.txt)、[推理说明](docs/inference.md)。
+- **权重**：ModelScope 的 `model.safetensors`，固定 revision `858cff0254c976a615f05f2d4746b8584c811c3d`；[发布清单](release_manifest.json)记录 SHA-256 和基础模型版本。
+- **能力**：音频 + 问题 + 候选答案 → 分类选择与 logits，不是开放式文本生成。
+- **验证边界**：已完成 CPU 契约测试、真实权重结构检查及小型 Qwen3.5 前向一致性检查；**完整 GPU 加载和真实音频端到端推理尚未验证，不保证开箱即用**。原有评测结果不等同于这份新 CLI 的复测结果。
+- **离线加载**：适配器强制 SHA-256 校验；本地冻结基座仅检查必需文件和结构，未强制逐文件哈希校验，请使用文档指定 revision。
+- **许可**：原创推理代码目前没有单独授予复用许可；公开可见不代表可自由复用或商用。适配器保持已发布的非商用许可；第三方源码保留原许可，见[声明](THIRD_PARTY_NOTICES.md)。
 
 ## 模型对比 · Accuracy ↑（%）
 

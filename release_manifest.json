@@ -1,0 +1,14 @@
+{
+  "release": "best2250",
+  "model_repository": "MewTiger/Jev-Audio-Adapter",
+  "model_revision": "858cff0254c976a615f05f2d4746b8584c811c3d",
+  "model_file": "model.safetensors",
+  "model_sha256": "efd7bb52e3f188fabaeea341ea7b796471e84241568a1c293b7f822e0a9999f7",
+  "model_bytes": 147370784,
+  "tensor_count": 75,
+  "parameters": 36840448,
+  "d3_revision": "6838193a0185c0ecfecab937896059d2c3377d61",
+  "firered_weights_revision": "3abf43d7539a2fc05991b9f89295c892f0a034f0",
+  "firered_code_revision": "4bf612ee3d97fc7ea82be9fddd4fb87771732ea9",
+  "full_gpu_smoke_test": "pending"
+}

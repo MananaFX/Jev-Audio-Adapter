@@ -39,3 +39,7 @@ predictions/
 __pycache__/
 .venv/
 .DS_Store
+
+# Public release metadata is intentionally versioned
+!release_manifest.json
+*.py[cod]
